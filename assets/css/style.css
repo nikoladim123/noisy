@@ -306,3 +306,57 @@ main h2 span{
   align-items: flex-start;
 }
 /* section srv end */
+
+
+/* instagramSection start */
+.instagramSection{
+  position: relative;
+  background: #e2e2e2;
+  padding: 0.1px;
+}
+
+.instagramSection h2{
+  font-family: 'Gorgeous-UltraThin';
+  font-weight: 100;
+  font-size: 21.791vw;
+  margin: 0;
+  position: absolute;
+  margin-top: 2.9vw;
+  margin-left: 2.615vw;
+  writing-mode: tb;
+}
+
+.instagramTopBox{
+  display: flex;
+  justify-content: center;
+  margin-top: 13.3171vw;
+}
+.instagramTopBox img{
+  width: 43.583vw;
+}
+
+.instagramMiddleBox{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: 0.2vw;
+}
+.instagramMiddleBox img{
+  position: relative;
+  width: 33%;
+}
+
+.instagramBottomBox{
+  display: flex;
+  justify-content: center;
+  margin-top: 2.3244vw;
+  margin-bottom: 20vw;
+}
+.instagramBottomBox img{
+  width: 46.5859vw;
+  margin: 0 -5vw;
+}
+.instagramBottomBox img:hover{
+  z-index: 1;
+}
+/* instagramSection end */

@@ -1,63 +1,143 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="assets/css/style.css">
-  </head>
-  <body>
 
-    <header>
-      <img class="headerBG" src="assets/images/header/headerBG.jpg" alt="">
-      <div class="headerContent">
-          <div class="logoBox">
-            <img class="logo" src="assets/images/logo.jpg" alt="">
-          </div>
-          <div class="headerHeading">
-            <h1>Nancy<span>Gould</span></h1>
-          </div>
-          <h3>Nancy Gould Photography LLS in Boston Massachusets</h3>
-          <img class="photography" src="assets/images/header/photography.png" alt="">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/car.css">
+</head>
+
+<body>
+
+  <header>
+    <img class="headerBG" src="assets/images/header/headerBG.jpg" alt="">
+    <div class="headerContent">
+      <div class="logoBox">
+        <img class="logo" src="assets/images/logo.jpg" alt="">
       </div>
-      <a class="viewMyWork" href="#">VIEW MY WORK</a>
-    </header>
+      <div class="headerHeading">
+        <h1>Nancy<span>Gould</span></h1>
+      </div>
+      <h3>Nancy Gould Photography LLS in Boston Massachusets</h3>
+      <img class="photography" src="assets/images/header/photography.png" alt="">
+    </div>
+    <a class="viewMyWork" href="#">VIEW MY WORK</a>
+  </header>
 
-    <main>
-      <img class="servicesBG" src="assets/images/services/bg.png" alt="">
-      <div class="servicesAnimTopContainer">
-        <div class="servicesAnimContainer">
-          <img class="stripes stripestopAnim" src="assets/images/services/stripes.png" alt="">
-          <img class="stripes stripesanim" src="assets/images/services/stripes.png" alt="">
+  <main>
+    <img class="servicesBG" src="assets/images/services/bg.png" alt="">
+    <div class="servicesAnimTopContainer">
+      <div class="servicesAnimContainer">
+        <img class="stripes stripestopAnim" src="assets/images/services/stripes.png" alt="">
+        <img class="stripes stripesanim" src="assets/images/services/stripes.png" alt="">
+      </div>
+    </div>
+    <img class="bigCirc" src="assets/images/services/bigCirc.png" alt="">
+    <img class="servicescirc" src="assets/images/services/circ.png" alt="">
+    <img class="servicesImg" src="assets/images/services/servicesImg.png" alt="">
+    <div class="servicesTextBox">
+      <h3>Hey there!</h3>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+    </div>
+    <h2>About<span>Nancy</span></h2>
+  </main>
+
+  <section class="sectionSrv">
+    <h2 class="srvHtwo">Services</h2>
+    <div class="srvLeftContainer">
+      <img src="assets/images/srv/1.png" alt="">
+      <img src="assets/images/srv/2.png" alt="">
+      <img src="assets/images/srv/3.png" alt="">
+      <img src="assets/images/srv/4.png" alt="">
+    </div>
+    <div class="srvRightContaner">
+      <img src="assets/images/srv/5.jpg" alt="">
+      <img src="assets/images/srv/6.png" alt="">
+      <img src="assets/images/srv/7.png" alt="">
+      <img src="assets/images/srv/8.png" alt="">
+      <img src="assets/images/srv/9.png" alt="">
+    </div>
+  </section>
+
+  <section class="sectionCar testimonialsSection" style="border-top: 0vw solid rgb(60, 65, 69);">
+    <div class="carContainer">
+      <div class="rightCarBox">
+        <img src="assets/images/slider/1.jpg" alt="">
+      </div>
+      <div class="headingText">
+        <div class="headingTextInside" style="width: 47vw;">
+          <img src="assets/images/textImages/PopularPosts.png" alt="">
         </div>
       </div>
-      <img class="bigCirc" src="assets/images/services/bigCirc.png" alt="">
-      <img class="servicescirc" src="assets/images/services/circ.png" alt="">
-      <img class="servicesImg" src="assets/images/services/servicesImg.png" alt="">
-      <div class="servicesTextBox">
-        <h3>Hey there!</h3>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+      <div class="leftTextBox">
+        <div class="arrows">
+          <img onclick="leftTest()" class="leftArrow" src="assets/images/leftArrow.jpg" alt="">
+          <img onclick="rightTest()" class="rightArrow" src="assets/images/rightArrow.jpg" alt="">
+        </div>
+        <div class="button buttonCar">
+          <p>Travel</p>
+        </div>
+        <p class="carDate">11/22/2018</p>
+        <div class="textBoxFixed" style="width: 100%;">
+          <div class="textBox">
+            <h2>A SUNNY DAY AT THE LOCAL <br> LAKE IN SAN MARINO </h2>
+            <p class="carLorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea com</p>
+            <p class="pinkCyrus">By Cyrus Khamak</p>
+          </div>
+        </div>
       </div>
-      <h2>About<span>Nancy</span></h2>
-    </main>
+    </div>
+    <div class="carContainer" style="width: 0%;">
+      <div class="rightCarBox">
+        <img src="assets/images/slider/5.jpg" alt="">
+      </div>
+      <div class="headingText">
+        <div class="headingTextInside" style="width: 47vw;">
+          <img src="assets/images/textImages/PopularPosts.png" alt="">
+        </div>
+      </div>
+      <div class="leftTextBox">
+        <div class="arrows">
+          <img onclick="leftTest()" class="leftArrow" src="assets/images/leftArrow.jpg" alt="">
+          <img onclick="rightTest()" class="rightArrow" src="assets/images/rightArrow.jpg" alt="">
+        </div>
+        <div class="button buttonCar">
+          <p>Travel</p>
+        </div>
+        <p class="carDate">11/22/2018</p>
+        <div class="textBoxFixed" style="width: 100%;">
+          <div class="textBox">
+            <h2>A SUNNY DAY AT THE LOCAL <br> LAKE IN SAN MARINO </h2>
+            <p class="carLorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea com</p>
+            <p class="pinkCyrus">By Cyrus Khamak</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section class="sectionSrv">
-      <h2 class="srvHtwo">Services</h2>
-      <div class="srvLeftContainer">
-        <img src="assets/images/srv/1.png" alt="">
-        <img src="assets/images/srv/2.png" alt="">
-        <img src="assets/images/srv/3.png" alt="">
-        <img src="assets/images/srv/4.png" alt="">
-      </div>
-      <div class="srvRightContaner">
-        <img src="assets/images/srv/5.jpg" alt="">
-        <img src="assets/images/srv/6.png" alt="">
-        <img src="assets/images/srv/7.png" alt="">
-        <img src="assets/images/srv/8.png" alt="">
-        <img src="assets/images/srv/9.png" alt="">
-      </div>
-    </section>
+  <section class="instagramSection">
+    <h2>Instagram</h2>
+    <div class="instagramTopBox">
+      <img src="assets/images/instagram/1.jpg" alt="">
+    </div>
+    <div class="instagramMiddleBox">
+      <img src="assets/images/instagram/2.jpg" alt="">
+      <img src="assets/images/instagram/3.jpg" alt="">
+      <img src="assets/images/instagram/4.jpg" alt="">
+    </div>
+    <div class="instagramBottomBox">
+      <img src="assets/images/instagram/1.png" alt="">
+      <img src="assets/images/instagram/2.png" alt="">
+    </div>
+  </section>
 
-    <script src="assets/js/app.js" charset="utf-8"></script>
-  </body>
+  <script src="assets/js/app.js" charset="utf-8"></script>
+  <script src="assets/js/car.js" charset="utf-8"></script>
+</body>
+
 </html>

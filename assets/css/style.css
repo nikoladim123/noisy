@@ -1,0 +1,308 @@
+@font-face {
+  font-family: 'Gorgeous-UltraThin';
+  src: url('../fonts/Gorgeous-UltraThin.ttf');
+}
+@font-face {
+  font-family: 'Gorgeous-Thin';
+  src: url('../fonts/Gorgeous-Thin.ttf');
+}
+@font-face {
+  font-family: 'Gorgeous-Bold';
+  src: url('../fonts/Gorgeous-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Cormorant-Regular';
+  src: url('../fonts/Cormorant-Regular.otf');
+}
+
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url('../fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Reey-Regular';
+  src: url('../fonts/Reey-Regular.otf');
+}
+
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('../fonts/Montserrat-Regular.ttf');
+}
+
+body{
+  margin: 0;
+}
+
+header{
+  position: relative;
+}
+
+.headerBG{
+  width: 100%;
+}
+
+.headerContent{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  /* border: 1px solid red; */
+}
+
+.logoBox{
+  position: relative;
+  margin-top: 1.21vw;
+  margin-left: 5.47215vw;
+  width: 10.8958vw;
+  height: 10.8958vw;
+  background: #e7e7e7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1{
+  background: -webkit-linear-gradient(270deg, #fff, #000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 100;
+  font-family: 'Gorgeous-Thin';
+  color: white;
+  font-size: 29.0556vw;
+  margin: 0;
+  writing-mode: tb;
+  margin-top: 0.7vw;
+}
+h1 span{
+  font-weight: 800;
+  font-family: 'Gorgeous-Bold';
+}
+
+.headerContent h3{
+  position: absolute;
+  top: 51vw;
+  left: 4vw;
+  font-size: 0.67796vw;
+  font-family: 'Cormorant-Regular';
+  writing-mode: tb;
+}
+
+.photography{
+  position: absolute;
+  top: 62vw;
+  left: 7vw;
+  width: 29vw;
+}
+
+.viewMyWork{
+  position: absolute;
+  color: #666666;
+  font-size: 1.4527vw;
+  font-family: 'OpenSans-Regular';
+  right: 10.2179vw;
+  top: 84.261vw;
+  text-decoration: none;
+}
+.viewMyWork:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+
+/* main start */
+main{
+  position: relative;
+}
+
+.servicesBG{
+  width: 100%;
+  position: relative;
+  margin-top: -11vw;
+}
+
+.servicesAnimTopContainer{
+  /* border: 1px solid green; */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 129vw;
+  overflow: hidden;
+}
+
+.servicesAnimContainer{
+  /* border: 1px solid red; */
+  width: 224%;
+  height: 128vw;
+  position: absolute;
+  left: -52vw;
+  overflow: hidden;
+  bottom: -1.2vw;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+}
+.stripes{
+  position: absolute;
+  right: 70vw;
+  bottom: 0;
+  width: 100vw;
+  opacity: 0;
+}
+
+.stripestopAnim{
+  animation-delay:4s;
+  animation-name: stripesanim;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform-origin:bottom right;
+}
+
+.stripesanim{
+  animation-name: stripesanim;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform-origin:bottom right;
+}
+
+@keyframes stripesanim {
+  0%{
+    opacity:0;
+    transform:scale(1);
+  }
+  35%{
+    opacity: 0.15;
+    /* bottom: 0vw; */
+    /* right: 0vw; */
+  }
+  100%{
+    opacity: 0;
+    /* bottom: 0vw; */
+    /* right: 0vw; */
+    transform:scale(1.18);
+  }
+}
+
+
+
+main h2{
+  position: absolute;
+  left: 0;
+  top:0;
+  background: -webkit-linear-gradient(270deg, #000, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 100;
+  font-family: 'Gorgeous-Thin';
+  color: white;
+  font-size: 22.79vw;
+  margin: 0;
+  top: 20vw;
+  writing-mode: tb;
+  left: 1vw;
+  margin-top: 0.7vw;
+  transform: rotate(180deg);
+}
+
+main h2 span{
+  font-weight: 800;
+  font-family: 'Gorgeous-Bold';
+}
+
+.servicescirc{
+  transition: 3s ease;
+  transition-delay: 1s;
+  position: absolute;
+  top: 7vw;
+  right: 19vw;
+  width: 55.7869vw;
+  filter: brightness(0);
+}
+.bigCirc{
+  position: absolute;
+  width: 87.4576vw;
+  right: 0;
+  top: -7vw;
+}
+
+.servicesImg{
+  transition: 3s ease;
+  filter: brightness(0);
+  position: absolute;
+  width: 38.74vw;
+  right: 9vw;
+  top: 15vw;
+}
+
+.servicesTextBox{
+  position: absolute;
+  /* border: 1px solid red; */
+  right: 48vw;
+  width: 22vw;
+  top: 32vw;
+}
+
+.servicesTextBox h3{
+  position: relative;
+  font-family: 'Reey-Regular';
+  color: white;
+  font-size: 3.4866vw;
+}
+
+.servicesTextBox p{
+  color: #727374;
+  font-size: 1.4527vw;
+  font-family: 'Montserrat-Regular';
+}
+/* main end */
+
+/* section srv start */
+.srvHtwo{
+  position: absolute;
+  top: -19vw;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  font-size: 21.791vw;
+  font-family: 'Gorgeous-UltraThin';
+  font-weight: 100;
+}
+.sectionSrv{
+  z-index: 1;
+  background: #dbdbdb;
+  position: relative;
+  display: flex;
+  padding-top: 5.18159vw;
+}
+.sectionSrv img{
+  padding: 0.1694vw;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.srvLeftContainer{
+  position: relative;
+  width: 50%;
+  /* border: 1px solid green; */
+  min-height: 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.srvRightContaner{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 50%;
+  /* border: 1px solid green; */
+  min-height: 10vw;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+/* section srv end */

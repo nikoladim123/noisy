@@ -20,8 +20,8 @@ elem = `
   </div>
   <div class="leftTextBox">
     <div class="arrows">
-      <img onclick="leftTest()" class="leftArrow" src="assets/images/leftArrow.jpg" alt="">
-      <img onclick="rightTest()" class="rightArrow" src="assets/images/rightArrow.jpg" alt="">
+      <img onclick="leftTest()" class="leftArrow" src="assets/images/slider/leftArrow.jpg" alt="">
+      <img onclick="rightTest()" class="rightArrow" src="assets/images/slider/rightArrow.jpg" alt="">
     </div>
     <div class="button buttonCar">
       <p>Travel</p>

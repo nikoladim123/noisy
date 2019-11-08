@@ -3,9 +3,10 @@ body{
   background-color: rgb(249,242,242);
 }
 .sectionCar{
-  overflow: hidden;
+  /* overflow: hidden; */
   /* transition: 2s; */
   /* margin-top: 50vw; */
+  z-index: 1;
   height: 78vw;
   /* margin-bottom: -27vw; */
   background-color: rgb(60, 65, 69);
@@ -236,7 +237,7 @@ body{
   transition: 1.5s;
   overflow: hidden;
   /* border: 1px solid blue; */
-  height: 21vw;
+  height: 24vw;
   position: absolute;
   /* width: 100%; */
   width: 0%;
@@ -246,4 +247,14 @@ body{
   position: absolute;
   /* border: 1px solid green; */
   width: 39.73vw;
+}
+
+.carHtwo{
+  font-family: 'Gorgeous-UltraThin';
+  font-weight: 100;
+  font-size: 21.791vw;
+  margin: 0;
+  position: absolute;
+  top: -8vw;
+  color: #b5b5b5;
 }

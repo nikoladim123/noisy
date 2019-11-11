@@ -38,6 +38,42 @@ body{
 header{
   position: relative;
 }
+.navContainer{
+  /* border: 1px solid red; */
+  position: absolute;
+  width: 100%;
+  /* height: 5vw; */
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+nav{
+  margin-top: 1.1622vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  float: right;
+  height: 4.6489vw;
+  width: 34.140vw;
+  background: #e7e7e7;
+}
+nav a img{
+  width: 1.259vw;
+  position: relative;
+  /* top: 0.5vw; */
+  margin-right: 0.5vw;
+}
+nav a{
+  font-size: 1.0653vw;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-family: 'OpenSans-Regular';
+  color: #666666;
+}
+nav a:hover{
+  text-decoration: underline;
+}
 
 .headerBG{
   width: 100%;
@@ -55,19 +91,24 @@ header{
 .logoBox{
   position: relative;
   margin-top: 1.21vw;
-  margin-left: 5.47215vw;
+  margin-left: 7.47215vw;
   width: 10.8958vw;
   height: 10.8958vw;
-  background: #e7e7e7;
+  /* background: #e7e7e7; */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.logo{
+  width: 9.2978vw;
+}
+
 h1{
-  background: -webkit-linear-gradient(270deg, #fff, #000);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* background: -webkit-linear-gradient(270deg, #fff, #000); */
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
+  color: white;
   font-weight: 100;
   font-family: 'Gorgeous-Thin';
   color: white;
@@ -193,9 +234,9 @@ main h2{
   position: absolute;
   left: 0;
   top:0;
-  background: -webkit-linear-gradient(270deg, #000, #fff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* background: -webkit-linear-gradient(270deg, #000, #fff); */
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
   font-weight: 100;
   font-family: 'Gorgeous-Thin';
   color: white;
@@ -206,9 +247,11 @@ main h2{
   left: 1vw;
   margin-top: 0.7vw;
   transform: rotate(180deg);
+  color: black;
 }
 
 main h2 span{
+  color: white;
   font-weight: 800;
   font-family: 'Gorgeous-Bold';
 }
@@ -280,7 +323,55 @@ main h2 span{
   padding-top: 8.18159vw;
   padding-bottom: 12vw;
 }
+
+.servServicesButtonContainer{
+  position: absolute;
+  left: 3vw;
+  top: 14vw;
+  /* border: 1px solid red; */
+  perspective: 5vw;
+  /* transform: sk; */
+  z-index: 1;
+  cursor: pointer;
+}
+.srvButtonCircle{
+  transition: 0.5s ease;
+  opacity: 0.2;
+  position: relative;
+  width: 8.28vw;
+  height: 8.28vw;
+  border-radius: 50%;
+  background: #db846a;
+}
+.servServicesButtonContainer:hover .srvButtonCircle{
+  opacity: 0.5;
+}
+.servServicesButtonContainer:hover .servServicesParBox{
+  opacity: 0.5;
+  transform: rotate3d(0, 0, 0, 27deg);
+  left: 0.5vw;
+}
+.servServicesParBox{
+  transition: 0.5s ease;
+  transform: rotate3d(0, 1, 0, 27deg);
+  /* border: 1px solid green; */
+  height: 5vw;
+  position: absolute;
+  width: 10vw;
+  z-index: 1;
+}
+.servServicesParBox p{
+  pointer-events: none;
+  font-size: 2.3244vw;
+  /* font-weight: 600; */
+  color: black;
+  font-family: 'Cormorant-Regular';
+  position: absolute;
+  transform: scale(1,2);
+}
+
 .sectionSrv img{
+  cursor: pointer;
   padding: 0.1694vw;
   max-width: 100%;
   box-sizing: border-box;
@@ -294,6 +385,19 @@ main h2 span{
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-end;
+}
+
+.srvLeftContainer img:nth-child(1){
+  width: 30.50vw;
+}
+.srvLeftContainer img:nth-child(3){
+  width: 32.784vw;
+}
+.srvRightContaner img:nth-child(2){
+  width: 32.445vw;
+}
+.srvRightContaner img:nth-child(5){
+  width: 32.92vw;
 }
 
 .srvRightContaner{
@@ -542,7 +646,476 @@ main h2 span{
   width: 100%;
   /* transition: rot; */
 }
-
-
-
 /* instagramSection end */
+
+/* newsAndEventsSection start */
+.newsAndEventsSection{
+  position: relative;
+  padding: 0.1px;
+  margin-bottom: 0vw;
+  /* border: 1px solid green; */
+  background: #e2e2e2;
+}
+.newsAndEventsSection a{
+  color: black;
+  font-family: 'Lato-Regular';
+  font-size: 1.336vw;
+  color: rgb(85,85,85);
+  font-family: 'Montserrat-Regular';
+}
+.pinkBox{
+  transition: 1s ease;
+  position: relative;
+  padding-top: 0.31vw;
+  /* padding-top: 0.1px; */
+  /* background-color: rgb(248,243,239); */
+  background: white;
+  width: 100%;
+  min-height: 74.23vw;
+}
+.newsAndEventsSection h2{
+  margin: 0;
+  margin-top: 3.34vw;
+  /* margin-bottom: 3vw; */
+  text-align: center;
+  font-size: 5.35vw;
+  color: #555555;
+  font-family: 'PlayfairDisplay-Regular';
+  position: relative;
+  transition: 1s ease;
+  font-family: 'PlayfairDisplay-Regular';
+  text-align: center;
+  font-size: 16.222vw;
+  color: black;
+  margin: 0;
+  font-weight: 100;
+  margin-bottom: 0.3vw;
+  font-family: 'Morganite-Light';
+  font-family: 'Gorgeous-UltraThin';
+}
+
+.favoriteProductP{
+  text-align: center;
+  margin-top: 0;
+  font-size: 1.7vw;
+  font-family: 'Lato-Regular';
+  font-size: 1.0vw;
+  margin: 0;
+  margin-top: 1vw;
+  font-weight: 100;
+  text-align: center;
+  font-family: 'Montserrat-Regular';
+}
+
+.linePng{
+  position: relative;
+  background-image:url('../images/sectionSixCar/lineTriangle.png');
+  position: relative;
+  margin-left: 50.5%;
+  left: -8.35vw;
+  width: 16.69vw;
+  height: 2.07vw;
+  margin-top: 0vw;
+  margin-bottom: 2vw;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.carThreeContainer{
+  position: relative;
+  width: 91vw;
+  height: 57.5vw;
+  bottom: 0px;
+  margin-left: 50%;
+  left:-45.5vw;
+  overflow: hidden;
+}
+
+.carouselThree{
+  transition: 0.7s;
+  display: flex;
+  position: absolute;
+  width: 150%;
+  height: 100%;
+  left:0%;
+}
+.carouselThree>div{
+  width: 32%;
+  margin-right: 0.666%;
+  margin-left: 0.666%;
+}
+.carDivOne,.carDivTwo,.carDivThree{
+  position: relative;
+  width: 100%;
+  height:51.28%;
+}
+.carDivOne img,.carDivTwo img,.carDivThree img{
+  width: 100%;
+  height: 100%;
+}
+
+.yellowSquareContainer{
+  margin-top: 2.59vw;
+  display: flex;
+  font-family: 'Lato-Regular';
+  font-family: 'Montserrat-Regular';
+}
+.yellowSquareContainer p{
+  margin: 0;
+  font-family: 'Lato-Regular';
+  font-family: 'Montserrat-Regular';
+}
+.YellowSquare{
+  margin: 4px;
+  text-align: center;
+  width: 4.45vw;
+  height: 4.45vw;
+  border: 1px solid #f1a170;
+  outline: 4px solid #f13408;
+  margin-right: 1vw;
+}
+.YellowSquare p{
+  margin: 0;
+  font-size: 1.336vw;
+}
+.YellowSquare b:nth-child(1) p{
+  margin-top: 0.6vw;
+  margin-bottom: -0.3vw;
+}
+.loremIpsumText{
+  margin-top: 2.227vw;
+}
+.loremIpsumText p{
+  font-size: 1.336vw;
+  margin: 0;
+  line-height: 1.6vw;
+  margin-bottom: 2.5vw;
+  font-family: 'Montserrat-Regular';
+  /* font-family: 'Lato-Regular'; */
+}
+
+.carThreeArrowContainer{
+  position: relative;
+  width: 6.68vw;
+  height: 2.96vw;
+  margin-left: 50%;
+  margin-top: 0.37vw;
+  left: -3.34vw;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  margin-bottom: 5.716vw;
+}
+
+.carThreeArrowContainer>div{
+  background-image: url('../images/sectionSixCar/carThreeArrow.jpg');
+  width: 45%;
+  height: 100%;
+  background-size: 100% 100%;
+}
+.carThreeArrowContainer>div:hover{
+  cursor: pointer;
+}
+#carThreeRightArrow{
+  transform: rotate(180deg);
+}
+/* newsAndEventsSection end */
+
+/* section notify me start */
+label{
+  font-weight: normal;
+}
+.labelBox p{
+  display: inline;
+}
+/* The container */
+.containerInput {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.containerInput input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.containerInput:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.containerInput input:checked ~ .checkmark {
+  background-color: pink;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.containerInput input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.containerInput .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.notifyMe{
+  position: relative;
+  /* height: 25.46vw; */
+  background-color: #e2e2e2;
+  padding: 0.1px;
+  /* margin-top: 10.1845vw; */
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  /* flex-direction: column; */
+  /* margin-top: 1vw; */
+  z-index: 3;
+  padding-bottom: 16vw;
+}
+
+.notifyMeBG{
+  position: absolute;
+  width: 77.0944vw;
+}
+
+.pinkFormBox{
+  position: relative;
+  padding: 0.1px;
+  height: 11.1864vw;
+  width: 49vw;
+  /* background-color: #e3d671; */
+  background: rgba(255,191,183,0.7);
+  /* box-shadow:  0px 49px 99px 3px rgba(241,88,102,0.9); */
+  right: 0;
+  /* top: -2.7306vw; */
+  display: flex;
+  flex-shrink: 0;
+  margin-bottom: 4vw;
+  margin-top: 14vw;
+  align-items: center;
+}
+
+.pinkSectionForm{
+  /* border: 1px solid; */
+  position: relative;
+  /* margin-left: 27.8966vw; */
+  margin-top: 6.1992vw;
+  /* font-size: 2vw; */
+  margin-left: 4vw;
+}
+.pinkSectionForm h2{
+  font-family: 'Roboto-Bold.ttf';
+  /* letter-spacing: -3px; */
+  margin: 0;
+  font-size: 2.0vw;
+  color: #33393e;
+  margin-bottom: 1vw;
+  font-family: 'Montserrat-Regular';
+}
+.pinkSectionForm p{
+  font-weight: 800;
+  display: inline;
+  font-family: 'Roboto-Light.ttf';
+  color: #black;
+  font-size: 1.0vw;
+  font-family: 'Montserrat-Regular';
+}
+.pinkFormTextInput{
+  height: 100%;
+  width: 11.6715vw;
+  background-color: transparent;
+  border: 2px solid #fff;
+  padding-left: 1vw;
+  font-size: 1.0332vw;
+  margin-left: 5.69vw;
+  box-sizing: border-box;
+}
+.pinkInBut{
+  display: flex;
+  position: relative;
+  margin-left: 8vw;
+  top: -3vw;
+  height: 2.1734vw;
+  box-sizing: border-box;
+  margin-right: 4vw;
+  margin-bottom: 2vw;
+}
+.pinkFormButton{
+  background: #fff;
+  height: 100%;
+  width: 3.1734vw;
+  border: 1px solid #fff;
+  font-size: 1.6236vw;
+  padding: 0.1px;
+  color: #895a5b;
+  font-family: 'Roboto-Light.ttf';
+  font-weight: 800;
+}
+
+.notifyImg{
+  /* height: 20.8535vw; */
+  width: 13.368vw;
+  margin-left: 1vw;
+}
+/* section notify me end */
+
+/* footer start */
+footer{
+  position: relative;
+  display: block;
+  /* border: 1px solid red; */
+  background: black;
+  min-height: 2vw;
+  background: black;
+  /* overflow: hidden; */
+  z-index: 3;
+}
+
+.bigBlackCircleContainer{
+  /* border: 1px solid red; */
+  width: 100%;
+  position: absolute;
+  height: 11vw;
+  left: 0;
+  width: 100%;
+  top: -10vw;
+  overflow: hidden;
+}
+.bigBlackCircle{
+  position: absolute;
+  width: 90vw;
+  height: 79vw;
+  border-radius: 50%;
+  background: black;
+  left: -18vw;
+  top: 0vw;
+}
+
+.footerLogoContainer{
+  /* border: 1px solid red; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 25vw;
+  align-items: center;
+  top: -9vw;
+  margin-left: 14vw;
+}
+.footerLogoContainer h2{
+  color: white;
+  margin: 0;
+  writing-mode: tb;
+  /* margin-top: 0.7vw; */
+  font-size: 8.2324vw;
+  font-family: 'Gorgeous-Thin';
+  font-weight: 100;
+}
+.footerLogoContainer h2 span{
+  font-weight: 600;
+}
+.photographyFooter{
+  width: 12vw;
+  position: relative;
+  left: -5vw;
+  top: -1vw;
+  margin-bottom: -11vw;
+}
+.footerNav{
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+}
+
+.footerSocialMeds{
+  position: absolute;
+  /* border: 1px solid red; */
+  right: 2vw;
+  top: 0;
+  display: flex;
+}
+.footerSocialMeds a{
+  text-decoration: none;
+  margin: 1vw;
+}
+.footerSocialMeds .fab {
+  transition: 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: black;
+  width: 3.0034vw;
+  height: 3.0034vw;
+  border-radius: 50%;
+  font-size: 1.7vw;
+  margin-left: 0.17232vw;
+  margin-right: 0.17232vw;
+  text-decoration: none;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+.footerSocialMeds .fab:hover{
+  border: 1px solid rgba(255,255,255,0.6);
+}
+
+.footerNav a{
+  transition: 0.5s ease;
+  font-size: 1.0653vw;
+  text-decoration: none;
+  font-family: 'OpenSans-Regular';
+  color: white;
+  margin: 1vw;
+}
+.footerNav a:hover{
+  color: #db846a;
+}
+.copyRightsContainer{
+  display: flex;
+  justify-content: center;
+  padding-top: 2.5vw;
+  padding-bottom: 0.4vw;
+}
+.copyRightsContainer a{
+  text-decoration: none;
+  font-size: 0.8716vw;
+  color: black;
+  margin: 0 1vw;
+}
+/* footer end */

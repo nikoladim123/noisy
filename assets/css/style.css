@@ -76,7 +76,9 @@ nav a:hover{
 }
 
 .headerBG{
+  transition: 1s ease;
   width: 100%;
+  filter: brightness(0.05);
 }
 
 .headerContent{
@@ -317,7 +319,7 @@ main h2 span{
 }
 .sectionSrv{
   z-index: 1;
-  background: #dbdbdb;
+  background: #f2f2f2;
   position: relative;
   display: flex;
   padding-top: 8.18159vw;
@@ -985,7 +987,7 @@ label{
   font-size: 1.6236vw;
   padding: 0.1px;
   color: #895a5b;
-  font-family: 'Roboto-Light.ttf';
+  font-family: 'Montserrat-Regular';
   font-weight: 800;
 }
 

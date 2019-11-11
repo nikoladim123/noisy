@@ -2,6 +2,12 @@ var servicesAnimTopContainer = document.getElementsByClassName('servicesAnimTopC
 var servicescirc = document.getElementsByClassName('servicescirc');
 var servicesImg = document.getElementsByClassName('servicesImg');
 
+// headerBG double hover header
+var headerBG = document.getElementsByClassName('headerBG');
+function headerBGFun() {
+  headerBG[0].style.filter = 'brightness(1)'
+}
+
 // services
 function servicesBrightnesFun() {
   if (servicesAnimTopContainer[0].getClientRects()[0].top < -window.innerHeight / 100 * 1) {
@@ -48,4 +54,7 @@ function carMoveThree() {
 
 window.addEventListener('scroll', () => {
   servicesBrightnesFun();
+});
+window.addEventListener('load', () => {
+  headerBGFun();
 });

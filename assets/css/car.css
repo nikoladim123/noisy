@@ -7,7 +7,7 @@ body{
   /* transition: 2s; */
   /* margin-top: 50vw; */
   z-index: 1;
-  height: 78vw;
+  height: 68vw;
   /* margin-bottom: -27vw; */
   background-color: rgb(60, 65, 69);
   position: relative;
@@ -40,7 +40,7 @@ body{
   height: 34.146vw;
   background: rgb(253,247,247);
   top: 0;
-  margin-top: 25.186vw;
+  margin-top: 18.186vw;
   right: 53.21vw;
   box-shadow: 0px 0px 88px -41px rgba(0,0,0,0.70);
 }

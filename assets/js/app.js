@@ -52,9 +52,54 @@ function carMoveThree() {
   }
 }
 
+
+// OP UP SERVICES
+var servicesPopUpContainer = document.getElementsByClassName('servicesPopUpContainer');
+var popUpScrollableContainer = document.getElementsByClassName('popUpScrollableContainer');
+var srvImages = document.getElementsByClassName('srvImages');
+var lastImagePopup = document.getElementsByClassName('lastImagePopup');
+var imagePopup = document.getElementsByClassName('imagePopup');
+// imagePopup[3].scrollIntoView({block: "start",behavior:'smooth'})
+// srvImages[0].dataset.srvimg
+// popUpScrollableContainer[0].scrollBy(0,-5)
+
+for (var i = 0; i < srvImages.length; i++) {
+  srvImages[i].addEventListener('click',(e)=>{
+    servicesPopUpContainer[0].style.top = "0%";
+    setTimeout(function () {
+      imagePopup[e.target.dataset.srvimg].scrollIntoView({block: "start",behavior:'smooth'});
+    }, 1500);
+  });
+}
+
+servicesPopUpContainer[0].addEventListener('click',()=>{
+  servicesPopUpContainer[0].style.top = "-100%";
+});
+
+function popUpCloseOnScroll() {
+  if (lastImagePopup[0].getClientRects()[0].bottom - popUpScrollableContainer[0].offsetHeight < 1 ) {
+    servicesPopUpContainer[0].style.top = "-100%";
+    popUpScrollableContainer[0].scrollBy(0,-5);
+    console.log(123);
+  }
+}
+
+popUpScrollableContainer[0].addEventListener('scroll', () => {
+  popUpCloseOnScroll();
+  // console.log(123);
+});
+
+
+
+
+
+
+
+
 window.addEventListener('scroll', () => {
   servicesBrightnesFun();
 });
+
 window.addEventListener('load', () => {
   headerBGFun();
 });

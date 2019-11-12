@@ -4,9 +4,14 @@ var servicesImg = document.getElementsByClassName('servicesImg');
 
 // headerBG double hover header
 var headerBG = document.getElementsByClassName('headerBG');
-function headerBGFun() {
-  headerBG[0].style.filter = 'brightness(1)'
-}
+headerBG[0].src = 'assets/images/header/headerBG.jpg';
+headerBG[0].addEventListener('load',()=>{
+  setTimeout(function () {
+    headerBG[0].style.filter = 'brightness(1)';
+  }, 500);
+  // console.log(123);
+})
+
 
 // services
 function servicesBrightnesFun() {
@@ -69,10 +74,15 @@ var popUpCLoseBox = document.getElementsByClassName('popUpCLoseBox');
 popUpCLoseBox[0].addEventListener('click',()=>{
   servicesPopUpContainer[0].style.top = "-100%";
   imagePopup[0].style.top = '-100vh';
+  // popUpRight[0].style.opacity = '0';
+  // popUpLeft[0].style.opacity = '0';
 });
 
 for (var i = 0; i < srvImages.length; i++) {
   srvImages[i].addEventListener('click',(e)=>{
+    // popUpRight[0].style.opacity = '1';
+    // popUpLeft[0].style.opacity = '1';
+
     servicesPopUpContainer[0].style.top = "0%";
     imagePopup[0].src = `assets/images/srv/${[e.target.dataset.srvimg]}.png`;
     popUpImgCoutner = (e.target.dataset.srvimg * 10) -1;
@@ -157,5 +167,5 @@ window.addEventListener('scroll', () => {
 });
 
 window.addEventListener('load', () => {
-  headerBGFun();
+
 });

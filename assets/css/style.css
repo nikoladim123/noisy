@@ -1173,7 +1173,7 @@ footer{
 }
 .leftArrowpopup p,.rightArrowpopup p{
   user-select: none;
-  position: absolute;
+  position: fixed;
   top: 45vh;
   color: white;
   font-size: 4vw;
@@ -1181,6 +1181,10 @@ footer{
   transform: scale(1,2.7);
   left: 1vw;
   pointer-events: none;
+}
+.rightArrowpopup p{
+  left: unset;
+  right: 1vw;
 }
 .rightArrowpopup{
   transition: 0.5s ease;

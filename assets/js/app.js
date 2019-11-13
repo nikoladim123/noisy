@@ -85,7 +85,7 @@ for (var i = 0; i < srvImages.length; i++) {
 
     servicesPopUpContainer[0].style.top = "0%";
     imagePopup[0].src = `assets/images/srv/${[e.target.dataset.srvimg]}.png`;
-    popUpImgCoutner = (e.target.dataset.srvimg * 10) -1;
+    popUpImgCoutner = (e.target.dataset.srvimg * 100) -1;
     setTimeout(function () {
       // imagePopup[e.target.dataset.srvimg].scrollIntoView({block: "start",behavior:'smooth'});
     }, 1500);
@@ -117,7 +117,7 @@ setInterval(function () {
 }, 150);
 
 var popUpImgCoutner = 100;
-popUpRight[0].addEventListener('click',()=>{
+popUpLeft[0].addEventListener('click',()=>{
   popUpImgCoutner++;
   imagePopup[0].style.opacity = 0;
   setTimeout(function () {
@@ -125,7 +125,7 @@ popUpRight[0].addEventListener('click',()=>{
   }, 1000);
   console.log(popUpImgCoutner);
 });
-popUpLeft[0].addEventListener('click',()=>{
+popUpRight[0].addEventListener('click',()=>{
   popUpImgCoutner--;
   imagePopup[0].style.opacity = 0;
   setTimeout(function () {

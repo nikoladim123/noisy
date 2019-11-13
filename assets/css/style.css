@@ -81,7 +81,7 @@ nav a:hover{
 }
 
 .headerBG{
-  transition: 1s ease;
+  transition: 3s ease;
   width: 100%;
   filter: brightness(0.05);
 }
@@ -1137,7 +1137,7 @@ footer{
   height: 100%;
   overflow: hidden;
   z-index: 1;
-  background: rgba(0,0,0,0.9);
+  background: rgba(0,0,0,0.96);
   top: -100%;
 }
 

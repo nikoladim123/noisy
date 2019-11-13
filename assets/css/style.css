@@ -1213,7 +1213,7 @@ footer{
   user-select: none;
   position: absolute;
   top: 45vh;
-  color: white;
+  color: #909090;
   font-size: 4vw;
   margin: 0;
   transform: scale(1,2.7);
@@ -1253,7 +1253,7 @@ footer{
   margin: 0;
   font-size: 5vw;
   font-weight: 800;
-  color: white;
+  color: #909090;
   user-select: none;
   font-family: 'Montserrat-Thin';
   margin: 0 0.9vw;

@@ -557,9 +557,11 @@ main h2 span{
 
 .instagramMiddleBox{
   display: flex;
+  position: relative;
   justify-content: space-evenly;
   width: 100%;
   margin-top: 0.2vw;
+  z-index: 231312313;
 }
 .instaImgBox{
   position: relative;

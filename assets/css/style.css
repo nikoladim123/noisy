@@ -382,7 +382,7 @@ main h2 span{
   left: -20vw;
   position: absolute;
   background: #1d1d1b;
-  padding: 3vw;
+      padding: 6vw 5vw;
   z-index: 2;
 }
 

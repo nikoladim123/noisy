@@ -29,11 +29,17 @@ var servServicesButtonContainer = document.getElementsByClassName('servServicesB
 var sideMenuBox = document.getElementsByClassName('sideMenuBox');
 
 servServicesButtonContainer[0].addEventListener('click',()=>{
-  sideMenuBox[0].style.left = '0';
+  servServicesButtonContainer[0].style.left = '-20vw';
+  setTimeout(function () {
+    sideMenuBox[0].style.left = '0';
+  }, 400);
 });
 
 sideMenuBox[0].addEventListener('mouseleave',()=>{
   sideMenuBox[0].style.left = '-20vw';
+  setTimeout(function () {
+    servServicesButtonContainer[0].style.left = '3vw';
+  }, 400);
 });
 
 // carousel three

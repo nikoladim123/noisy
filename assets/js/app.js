@@ -24,6 +24,18 @@ function servicesBrightnesFun() {
   }
 }
 
+// side menu services
+var servServicesButtonContainer = document.getElementsByClassName('servServicesButtonContainer');
+var sideMenuBox = document.getElementsByClassName('sideMenuBox');
+
+servServicesButtonContainer[0].addEventListener('click',()=>{
+  sideMenuBox[0].style.left = '0';
+});
+
+sideMenuBox[0].addEventListener('mouseleave',()=>{
+  sideMenuBox[0].style.left = '-20vw';
+});
+
 // carousel three
 var carouselThree = document.getElementById('carouselThree');
 var carThreeLeftArrow = document.getElementById('carThreeLeftArrow');

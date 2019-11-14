@@ -376,6 +376,37 @@ main h2 span{
   position: absolute;
   transform: scale(1,2);
 }
+.sideMenuBox{
+  transition: 1s ease;
+  left: -20vw;
+  position: absolute;
+  background: #1d1d1b;
+  padding: 3vw;
+  z-index: 2;
+}
+
+.sideMenuBox p{
+  position: relative;
+  font-family: 'Cormorant-Regular';
+  user-select: none;
+  cursor: pointer;
+  color: white;
+  font-size: 1.3vw;
+}
+.sideMenuBox p::after{
+  transition: 0.5s ease;
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  height: 2px;
+  width: 0%;
+  background: white;
+}
+.sideMenuBox p:hover:after{
+  width: 100%;
+}
 
 .sectionSrv img{
   cursor: pointer;

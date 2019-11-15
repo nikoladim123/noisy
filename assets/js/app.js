@@ -98,14 +98,14 @@ sideMenuItem[1].addEventListener('click',()=>{
       <img data-srvimg='10' class="srvImages" src="assets/images/srv/srvTwo/10.jpg" alt="">
       <img data-srvimg='12' class="srvImages" src="assets/images/srv/srvTwo/12.jpg" alt="">
       <img data-srvimg='14' class="srvImages" src="assets/images/srv/srvTwo/14.jpg" alt="">
-      <img data-srvimg='18' class="srvImages" src="assets/images/srv/srvTwo/18.jpg" alt="">
+      <img data-srvimg='16' class="srvImages" src="assets/images/srv/srvTwo/16.jpg" alt="">
+      <img data-srvimg='17' class="srvImages" src="assets/images/srv/srvTwo/17.jpg" alt="">
     </div>
     <div class="srvRightContaner">
       <img data-srvimg='11' class="srvImages" src="assets/images/srv/srvTwo/11.jpg" alt="">
       <img data-srvimg='13' class="srvImages" src="assets/images/srv/srvTwo/13.jpg" alt="">
       <img data-srvimg='15' class="srvImages" src="assets/images/srv/srvTwo/15.jpg" alt="">
-      <img data-srvimg='16' class="srvImages" src="assets/images/srv/srvTwo/16.jpg" alt="">
-      <img data-srvimg='17' class="srvImages" src="assets/images/srv/srvTwo/17.jpg" alt="">
+      <img data-srvimg='18' class="srvImages" src="assets/images/srv/srvTwo/18.jpg" alt="">
     </div>
     `;
     addImageEventListeners();
@@ -213,7 +213,7 @@ popUpLeft[0].addEventListener('click',()=>{
   popUpImgCoutner++;
   imagePopup[0].style.opacity = 0;
   setTimeout(function () {
-    if (popUpImgCoutner < 18) {
+    if (popUpImgCoutner < 19) {
       imagePopup[0].src = `assets/images/srv/${popUpImgCoutner}.jpg`;
     }else{
       popUpImgCoutner = 1;

@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'Gorgeous-UltraThin';
-  src: url('../fonts/Gorgeous-UltraThin.ttf');
+  src: url('../fonts/Gorgeous-UltraThin.woff');
 }
 @font-face {
   font-family: 'Gorgeous-Thin';
-  src: url('../fonts/Gorgeous-Thin.ttf');
+  src: url('../fonts/Gorgeous-Thin.woff');
 }
 @font-face {
   font-family: 'Gorgeous-Bold';

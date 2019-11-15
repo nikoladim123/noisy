@@ -67,6 +67,54 @@ function sideTextAnimReset() {
   }
 }
 
+// sideMenu items change Service images
+var srvBigContainer = document.getElementsByClassName('srvBigContainer');
+var srvImages = document.getElementsByClassName('srvImages');
+  // sideMenuItem
+
+sideMenuItem[0].addEventListener('click',()=>{
+  srvBigContainer[0].innerHTML = `
+  <div class="srvLeftContainer">
+    <img data-srvimg='1' class="srvImages" src="assets/images/srv/1.jpg" alt="">
+    <img data-srvimg='3' class="srvImages" src="assets/images/srv/3.jpg" alt="">
+    <img data-srvimg='5' class="srvImages" src="assets/images/srv/5.jpg" alt="">
+    <img data-srvimg='8' class="srvImages" src="assets/images/srv/8.jpg" alt="">
+  </div>
+  <div class="srvRightContaner">
+    <img data-srvimg='2' class="srvImages" src="assets/images/srv/2.jpg" alt="">
+    <img data-srvimg='4' class="srvImages" src="assets/images/srv/4.jpg" alt="">
+    <img data-srvimg='6' class="srvImages" src="assets/images/srv/6.jpg" alt="">
+    <img data-srvimg='7' class="srvImages" src="assets/images/srv/7.jpg" alt="">
+    <img data-srvimg='9' class="srvImages" src="assets/images/srv/9.jpg" alt="">
+  </div>
+  `;
+  addImageEventListeners();
+
+});
+
+sideMenuItem[1].addEventListener('click',()=>{
+    srvBigContainer[0].innerHTML = `
+    <div class="srvLeftContainer">
+      <img data-srvimg='10' class="srvImages" src="assets/images/srv/srvTwo/10.jpg" alt="">
+      <img data-srvimg='12' class="srvImages" src="assets/images/srv/srvTwo/12.jpg" alt="">
+      <img data-srvimg='14' class="srvImages" src="assets/images/srv/srvTwo/14.jpg" alt="">
+      <img data-srvimg='18' class="srvImages" src="assets/images/srv/srvTwo/18.jpg" alt="">
+    </div>
+    <div class="srvRightContaner">
+      <img data-srvimg='11' class="srvImages" src="assets/images/srv/srvTwo/11.jpg" alt="">
+      <img data-srvimg='13' class="srvImages" src="assets/images/srv/srvTwo/13.jpg" alt="">
+      <img data-srvimg='15' class="srvImages" src="assets/images/srv/srvTwo/15.jpg" alt="">
+      <img data-srvimg='16' class="srvImages" src="assets/images/srv/srvTwo/16.jpg" alt="">
+      <img data-srvimg='17' class="srvImages" src="assets/images/srv/srvTwo/17.jpg" alt="">
+    </div>
+    `;
+    addImageEventListeners();
+
+});
+
+
+
+
 // carousel three
 var carouselThree = document.getElementById('carouselThree');
 var carThreeLeftArrow = document.getElementById('carThreeLeftArrow');
@@ -121,24 +169,23 @@ popUpCLoseBox[0].addEventListener('click',()=>{
   // popUpLeft[0].style.opacity = '0';
 });
 
-for (var i = 0; i < srvImages.length; i++) {
-  srvImages[i].addEventListener('click',(e)=>{
-    // popUpRight[0].style.opacity = '1';
-    // popUpLeft[0].style.opacity = '1';
 
-    servicesPopUpContainer[0].style.top = "0%";
-    imagePopup[0].src = `assets/images/srv/${[e.target.dataset.srvimg]}.png`;
-    popUpImgCoutner = (e.target.dataset.srvimg * 100) -1;
-    setTimeout(function () {
-      // imagePopup[e.target.dataset.srvimg].scrollIntoView({block: "start",behavior:'smooth'});
-    }, 1500);
-  });
-}
+function addImageEventListeners() {
+  for (var i = 0; i < srvImages.length; i++) {
+    srvImages[i].addEventListener('click',(e)=>{
 
-servicesPopUpContainer[0].addEventListener('click',(e)=>{
-  // e.currentTarget.style.top = "-100%";
-  // servicesPopUpContainer[0]
-});
+      servicesPopUpContainer[0].style.top = "0%";
+      // imagePopup[0].src = `assets/images/srv/${[e.target.dataset.srvimg]}.jpg`;
+      imagePopup[0].src = e.target.src;
+      popUpImgCoutner = (e.target.dataset.srvimg) ;
+
+    });
+  }
+};
+addImageEventListeners();
+
+
+
 
 function poUpPositionChecker() {
   if (popUpScrollableContainer[0].scrollHeight > window.innerHeight) {
@@ -159,20 +206,32 @@ setInterval(function () {
   poUpPositionChecker();
 }, 150);
 
-var popUpImgCoutner = 100;
+var sliderMenuSelection = 0;
+
+var popUpImgCoutner = 1;
 popUpLeft[0].addEventListener('click',()=>{
   popUpImgCoutner++;
   imagePopup[0].style.opacity = 0;
   setTimeout(function () {
-    imagePopup[0].src = `assets/images/srv/${popUpImgCoutner%9 +1}.png`;
+    if (popUpImgCoutner < 18) {
+      imagePopup[0].src = `assets/images/srv/${popUpImgCoutner}.jpg`;
+    }else{
+      popUpImgCoutner = 1;
+      imagePopup[0].src = `assets/images/srv/${popUpImgCoutner}.jpg`;
+    }
   }, 1000);
-  console.log(popUpImgCoutner);
+  console.log(popUpImgCoutner%18 + 1 );
 });
 popUpRight[0].addEventListener('click',()=>{
   popUpImgCoutner--;
   imagePopup[0].style.opacity = 0;
   setTimeout(function () {
-    imagePopup[0].src = `assets/images/srv/${popUpImgCoutner%9 +1}.png`;
+    if (popUpImgCoutner > 0) {
+      imagePopup[0].src = `assets/images/srv/${popUpImgCoutner}.jpg`;
+    }else{
+      popUpImgCoutner = 18;
+      imagePopup[0].src = `assets/images/srv/${popUpImgCoutner}.jpg`;
+    }
   }, 1000);
 });
 

@@ -330,6 +330,9 @@ main h2 span{
   padding-top: 8.18159vw;
   padding-bottom: 12vw;
 }
+.srvBigContainer{
+  display: flex;
+}
 
 .servServicesButtonContainer{
   transition: 0.5s ease;

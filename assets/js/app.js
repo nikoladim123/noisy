@@ -27,8 +27,10 @@ function servicesBrightnesFun() {
 // side menu services
 var servServicesButtonContainer = document.getElementsByClassName('servServicesButtonContainer');
 var sideMenuBox = document.getElementsByClassName('sideMenuBox');
+var sideMenuItem = document.getElementsByClassName('sideMenuItem');
 
 servServicesButtonContainer[0].addEventListener('click',()=>{
+  sideTextAnim();
   servServicesButtonContainer[0].style.left = '-20vw';
   setTimeout(function () {
     sideMenuBox[0].style.left = '0';
@@ -36,11 +38,34 @@ servServicesButtonContainer[0].addEventListener('click',()=>{
 });
 
 sideMenuBox[0].addEventListener('mouseleave',()=>{
+  sideTextAnimReset();
   sideMenuBox[0].style.left = '-20vw';
   setTimeout(function () {
     servServicesButtonContainer[0].style.left = '3vw';
   }, 400);
 });
+
+var sideTextAnimTime = 100;
+var sideTextI = 0;
+function sideTextAnim() {
+  for (var i = 0; i < sideMenuItem.length; i++) {
+    setTimeout(function () {
+      console.log(sideTextI);
+      sideMenuItem[sideTextI].style.top = '0';
+      sideMenuItem[sideTextI].style.opacity = '1';
+      sideTextI++;
+    }, sideTextAnimTime);
+    sideTextAnimTime+=100;
+  }
+}
+function sideTextAnimReset() {
+  sideTextAnimTime = 100;
+  sideTextI = 0;
+  for (var i = 0; i < sideMenuItem.length; i++) {
+    sideMenuItem[i].style.top = '1vw';
+    sideMenuItem[i].style.opacity = '0';
+  }
+}
 
 // carousel three
 var carouselThree = document.getElementById('carouselThree');

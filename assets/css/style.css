@@ -409,6 +409,13 @@ main h2 span{
   width: 100%;
 }
 
+.sideMenuItem{
+  opacity: 0;
+  top: 1vw;
+  transition: 1s ease;
+  transition-delay: 0.75s;
+}
+
 .sectionSrv img{
   cursor: pointer;
   padding: 0.1694vw;

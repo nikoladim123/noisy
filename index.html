@@ -10,6 +10,13 @@
 </head>
 
 <body>
+  <script type="text/javascript">
+  function checkImgOnload(e) {
+      if (e.clientHeight > e.clientWidth){
+        e.style.width = '30.50vw';
+      }
+  }
+  </script>
 
   <header>
     <div class="navContainer">
@@ -66,26 +73,26 @@
       </div>
     </div>
     <div class="sideMenuBox">
-      <p class="sideMenuItem">Galery 1</p>
-      <p class="sideMenuItem">Galery 2</p>
-      <p class="sideMenuItem">placehol</p>
-      <p class="sideMenuItem">placeholder</p>
-      <p class="sideMenuItem">placeho</p>
+      <p class="sideMenuItem">GALERY 1</p>
+      <p class="sideMenuItem">GALERY 2</p>
+      <p class="sideMenuItem">GALERY 3</p>
+      <p class="sideMenuItem">GALERY 4</p>
+      <p class="sideMenuItem">GALERY 5</p>
     </div>
 
     <div class="srvBigContainer">
       <div class="srvLeftContainer">
-        <img data-srvimg='1' class="srvImages" src="assets/images/srv/1.jpg" alt="">
-        <img data-srvimg='3' class="srvImages" src="assets/images/srv/3.jpg" alt="">
-        <img data-srvimg='5' class="srvImages" src="assets/images/srv/5.jpg" alt="">
-        <img data-srvimg='8' class="srvImages" src="assets/images/srv/8.jpg" alt="">
+        <img onload='checkImgOnload(this)' data-srvimg='1' class="srvImages" src="assets/images/srv/1.jpg" alt="">
+        <img onload='checkImgOnload(this)' data-srvimg='3' class="srvImages" src="assets/images/srv/3.jpg" alt="">
+        <img onload='checkImgOnload(this)' data-srvimg='5' class="srvImages" src="assets/images/srv/5.jpg" alt="">
+        <img onload='checkImgOnload(this)' data-srvimg='8' class="srvImages" src="assets/images/srv/8.jpg" alt="">
       </div>
       <div class="srvRightContaner">
-        <img data-srvimg='2' class="srvImages" src="assets/images/srv/2.jpg" alt="">
-        <img data-srvimg='4' class="srvImages" src="assets/images/srv/4.jpg" alt="">
-        <img data-srvimg='6' class="srvImages" src="assets/images/srv/6.jpg" alt="">
-        <img data-srvimg='7' class="srvImages" src="assets/images/srv/7.jpg" alt="">
-        <img data-srvimg='9' class="srvImages" src="assets/images/srv/9.jpg" alt="">
+        <img onload='checkImgOnload(this)' data-srvimg='2' class="srvImages" src="assets/images/srv/2.jpg" alt="">
+        <img onload='checkImgOnload(this)' data-srvimg='4' class="srvImages" src="assets/images/srv/4.jpg" alt="">
+        <img onload='checkImgOnload(this)' data-srvimg='6' class="srvImages" src="assets/images/srv/6.jpg" alt="">
+        <img onload='checkImgOnload(this)' data-srvimg='7' class="srvImages" src="assets/images/srv/7.jpg" alt="">
+        <img onload='checkImgOnload(this)' data-srvimg='9' class="srvImages" src="assets/images/srv/9.jpg" alt="">
       </div>
     </div>
   </section>

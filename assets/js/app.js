@@ -75,42 +75,82 @@ var srvImages = document.getElementsByClassName('srvImages');
 sideMenuItem[0].addEventListener('click',()=>{
   srvBigContainer[0].innerHTML = `
   <div class="srvLeftContainer">
-    <img data-srvimg='1' class="srvImages" src="assets/images/srv/1.jpg" alt="">
-    <img data-srvimg='3' class="srvImages" src="assets/images/srv/3.jpg" alt="">
-    <img data-srvimg='5' class="srvImages" src="assets/images/srv/5.jpg" alt="">
-    <img data-srvimg='8' class="srvImages" src="assets/images/srv/8.jpg" alt="">
+    <img onload='checkImgOnload(this)' data-srvimg='1' class="srvImages" src="assets/images/srv/1.jpg" alt="">
+    <img onload='checkImgOnload(this)' data-srvimg='3' class="srvImages" src="assets/images/srv/3.jpg" alt="">
+    <img onload='checkImgOnload(this)' data-srvimg='5' class="srvImages" src="assets/images/srv/5.jpg" alt="">
+    <img onload='checkImgOnload(this)' data-srvimg='8' class="srvImages" src="assets/images/srv/8.jpg" alt="">
   </div>
   <div class="srvRightContaner">
-    <img data-srvimg='2' class="srvImages" src="assets/images/srv/2.jpg" alt="">
-    <img data-srvimg='4' class="srvImages" src="assets/images/srv/4.jpg" alt="">
-    <img data-srvimg='6' class="srvImages" src="assets/images/srv/6.jpg" alt="">
-    <img data-srvimg='7' class="srvImages" src="assets/images/srv/7.jpg" alt="">
-    <img data-srvimg='9' class="srvImages" src="assets/images/srv/9.jpg" alt="">
+    <img onload='checkImgOnload(this)' data-srvimg='2' class="srvImages" src="assets/images/srv/2.jpg" alt="">
+    <img onload='checkImgOnload(this)' data-srvimg='4' class="srvImages" src="assets/images/srv/4.jpg" alt="">
+    <img onload='checkImgOnload(this)' data-srvimg='6' class="srvImages" src="assets/images/srv/6.jpg" alt="">
+    <img onload='checkImgOnload(this)' data-srvimg='7' class="srvImages" src="assets/images/srv/7.jpg" alt="">
+    <img onload='checkImgOnload(this)' data-srvimg='9' class="srvImages" src="assets/images/srv/9.jpg" alt="">
   </div>
   `;
   addImageEventListeners();
-
 });
 
 sideMenuItem[1].addEventListener('click',()=>{
     srvBigContainer[0].innerHTML = `
     <div class="srvLeftContainer">
-      <img data-srvimg='10' class="srvImages" src="assets/images/srv/srvTwo/10.jpg" alt="">
-      <img data-srvimg='12' class="srvImages" src="assets/images/srv/srvTwo/12.jpg" alt="">
-      <img data-srvimg='14' class="srvImages" src="assets/images/srv/srvTwo/14.jpg" alt="">
-      <img data-srvimg='16' class="srvImages" src="assets/images/srv/srvTwo/16.jpg" alt="">
-      <img data-srvimg='17' class="srvImages" src="assets/images/srv/srvTwo/17.jpg" alt="">
+      <img onload='checkImgOnload(this)' data-srvimg='10' class="srvImages" src="assets/images/srv/srvTwo/10.jpg" alt="">
+      <img onload='checkImgOnload(this)' data-srvimg='12' class="srvImages" src="assets/images/srv/srvTwo/12.jpg" alt="">
+      <img onload='checkImgOnload(this)' data-srvimg='14' class="srvImages" src="assets/images/srv/srvTwo/14.jpg" alt="">
+      <img onload='checkImgOnload(this)' data-srvimg='16' class="srvImages" src="assets/images/srv/srvTwo/16.jpg" alt="">
+      <img onload='checkImgOnload(this)' data-srvimg='17' class="srvImages" src="assets/images/srv/srvTwo/17.jpg" alt="">
     </div>
     <div class="srvRightContaner">
-      <img data-srvimg='11' class="srvImages" src="assets/images/srv/srvTwo/11.jpg" alt="">
-      <img data-srvimg='13' class="srvImages" src="assets/images/srv/srvTwo/13.jpg" alt="">
-      <img data-srvimg='15' class="srvImages" src="assets/images/srv/srvTwo/15.jpg" alt="">
-      <img data-srvimg='18' class="srvImages" src="assets/images/srv/srvTwo/18.jpg" alt="">
+      <img onload='checkImgOnload(this)' data-srvimg='11' class="srvImages" src="assets/images/srv/srvTwo/11.jpg" alt="">
+      <img onload='checkImgOnload(this)' data-srvimg='13' class="srvImages" src="assets/images/srv/srvTwo/13.jpg" alt="">
+      <img onload='checkImgOnload(this)' data-srvimg='15' class="srvImages" src="assets/images/srv/srvTwo/15.jpg" alt="">
+      <img onload='checkImgOnload(this)' data-srvimg='18' class="srvImages" src="assets/images/srv/srvTwo/18.jpg" alt="">
     </div>
     `;
     addImageEventListeners();
-
 });
+
+sideMenuItem[2].addEventListener('click',()=>{
+    srvBigContainer[0].innerHTML = `
+    <div class="srvLeftContainer">
+      <img onload='checkImgOnload(this)' data-srvimg='19' class="srvImages" src="assets/images/srv/srvThree/19.jpg" alt="">
+      <img onload='checkImgOnload(this)' data-srvimg='20' class="srvImages" src="assets/images/srv/srvThree/20.jpg" alt="">
+      <img onload='checkImgOnload(this)' data-srvimg='22' class="srvImages" src="assets/images/srv/srvThree/22.jpg" alt="">
+      <img onload='checkImgOnload(this)' data-srvimg='24' class="srvImages" src="assets/images/srv/srvThree/24.jpg" alt="">
+      <img onload='checkImgOnload(this)' data-srvimg='25' class="srvImages" src="assets/images/srv/srvThree/25.jpg" alt="">
+    </div>
+    <div class="srvRightContaner">
+      <img onload='checkImgOnload(this)' data-srvimg='20' class="srvImages" src="assets/images/srv/srvThree/20.jpg" alt="">
+      <img onload='checkImgOnload(this)' data-srvimg='21' class="srvImages" src="assets/images/srv/srvThree/21.jpg" alt="">
+      <img onload='checkImgOnload(this)' data-srvimg='23' class="srvImages" src="assets/images/srv/srvThree/23.jpg" alt="">
+      <img onload='checkImgOnload(this)' data-srvimg='26' class="srvImages" src="assets/images/srv/srvThree/26.jpg" alt="">
+    </div>
+    `;
+    addImageEventListeners();
+});
+
+// Sidemenu color CHange
+function sideMenuItemColorChange(e) {
+  for (var i = 0; i < sideMenuItem.length; i++) {
+    sideMenuItem[i].style.color = 'white';
+  };
+  e.target.style.color = '#d3866e';
+}
+for (var i = 0; i < sideMenuItem.length; i++) {
+  sideMenuItem[i].addEventListener('click',(e)=>{
+    sideMenuItemColorChange(e);
+  })
+}
+
+
+// img checker
+// function checkImgOnload(e) {
+//     if (e.clientHeight > e.clientWidth){
+//       e.style.width = '30.50vw';
+//     }
+// }
+
+
 
 
 
@@ -213,7 +253,7 @@ popUpLeft[0].addEventListener('click',()=>{
   popUpImgCoutner++;
   imagePopup[0].style.opacity = 0;
   setTimeout(function () {
-    if (popUpImgCoutner < 19) {
+    if (popUpImgCoutner < 27) {
       imagePopup[0].src = `assets/images/srv/${popUpImgCoutner}.jpg`;
     }else{
       popUpImgCoutner = 1;

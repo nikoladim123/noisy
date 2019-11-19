@@ -399,7 +399,7 @@ main h2 span{
   color: white;
   font-size: 1.45vw;
 }
-.sideMenuBox p::after{
+.sliderItemUnderline{
   transition: 0.5s ease;
   content: '';
   display: block;
@@ -410,8 +410,8 @@ main h2 span{
   width: 0%;
   background: white;
 }
-.sideMenuBox p:hover:after{
-  width: 100%;
+.sideMenuBox p:hover .sliderItemUnderline{
+  width: 75% !important;
 }
 
 .sideMenuItem{

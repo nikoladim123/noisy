@@ -28,6 +28,7 @@ function servicesBrightnesFun() {
 var servServicesButtonContainer = document.getElementsByClassName('servServicesButtonContainer');
 var sideMenuBox = document.getElementsByClassName('sideMenuBox');
 var sideMenuItem = document.getElementsByClassName('sideMenuItem');
+var sliderItemUnderline = document.getElementsByClassName('sliderItemUnderline');
 
 servServicesButtonContainer[0].addEventListener('click',()=>{
   sideTextAnim();
@@ -133,8 +134,12 @@ sideMenuItem[2].addEventListener('click',()=>{
 function sideMenuItemColorChange(e) {
   for (var i = 0; i < sideMenuItem.length; i++) {
     sideMenuItem[i].style.color = 'white';
+    sliderItemUnderline[i].style.width = '0%';
+    sliderItemUnderline[i].style.background = 'white';
   };
   e.target.style.color = '#d3866e';
+  e.target.children[0].style.width = '100%';
+  e.target.children[0].style.background = 'rgb(211, 134, 110)';
 }
 for (var i = 0; i < sideMenuItem.length; i++) {
   sideMenuItem[i].addEventListener('click',(e)=>{
